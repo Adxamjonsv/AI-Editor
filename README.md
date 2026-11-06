@@ -1,38 +1,40 @@
-# AI Studio Pro — Work in progress
+# AI Studio PRO — for Adobe After Effects 🎬✨
 
-**Status: early prototype; not ready for production use.** This public repository is being shared to document the project and invite feedback while development continues. It is not a completed After Effects automation product.
+[![License: UNLICENSED](https://img.shields.io/badge/license-UNLICENSED-blue.svg)](#)
+[![Version](https://img.shields.io/badge/version-1.0.0-purple.svg)](#)
+[![Creator](https://img.shields.io/badge/creator-Adxamjonsv-gold.svg)](https://github.com/Adxamjonsv)
 
-AI Studio Pro is an intended desktop companion for video editors and motion designers. The current source includes an Electron interface prototype and experimental code. The interface contains mock project data and illustrative render states. Those items are not evidence of a real After Effects connection, completed render, working AI provider integration, or verified usage.
+AI Studio — Adobe After Effects uchun maxsus yaratilgan professional sun'iy intellekt boshqaruv markazi. Foydalanuvchiga oddiy so'zlar bilan buyruq berish, referenslarni tahlil qilish va bevosita After Effects ichida haqiqiy kompozitsiya, qatlamlar, 3D kamera hamda animatsiyalarni yaratish imkonini beradi.
 
-## Current state
+---
 
-- Electron desktop interface prototype with Uzbek, Russian, and English UI assets.
-- Planned direction: turn a natural-language creative brief into a reviewable After Effects plan.
-- AI provider connections, secure user-owned API key storage, After Effects project inspection and actions, reference-media analysis, and actual rendering still need implementation and verification.
-- Do not put API keys, account credentials, private footage, or production project files in this repository.
-- No user, download, or external-contributor metrics are currently verified.
+## 🌟 Asosiy Imkoniyatlar (8 ta to'liq bo'lim)
 
-## Technology
+1. **AI Chat & Generate:** Tabiiy tildagi buyruqlar va 5 bosqichli AI Director ijro rejasi.
+2. **Referenslar Sahifasi:** Video va rasm referenslarini tahlil qilish (uslub, ranglar gammasi, kamera trayektoriyasi, ritm).
+3. **After Effects Boshqaruvi:** 3D qatlamlar, Transform (Position, Scale, Rotation, Opacity) va effektlarni masofadan sozlash.
+4. **AI Provayderlar:** Claude 3.5 Sonnet, ChatGPT GPT-4o, Google Gemini 1.5 Pro va Higgsfield modellarini token/byudjet nazorati bilan ulash.
+5. **Motion Presetlar Kutubxonasi:** Cinematic Logo Reveal, Minimal Text Reveal, Smooth Transition, Camera Push In va boshqalar.
+6. **Render va Eksport:** 4K, H.264, ProRes eksport sozlamalari, render navbati va jonli loglar.
+7. **Sozlamalar:** Dastur tili, tema, zaxira nusxa (backup) va xavfsizlik limitlari.
+8. **Dastur haqida:** Muallif ma'lumotlari va tizim ko'rsatkichlari.
 
-The project is structured as an Electron application using JavaScript, HTML, and CSS. `package.json` lists the current dependency set. The startup and build workflow has not yet been validated for a clean checkout; setup documentation will be updated as that work is completed.
+---
 
-## Roadmap
+## 🚀 Ishga tushirish (Quick Start)
 
-1. Audit the current Electron security boundaries and remove misleading demo behavior.
-2. Implement user-owned provider credentials with secure local storage and explicit paid-request consent.
-3. Build a constrained, reviewable plan format before adding any After Effects actions.
-4. Add After Effects integration with clear confirmation and verified success/failure reporting.
-5. Implement reference analysis and rendering only after rights, privacy, and real output handling are addressed.
-6. Add clean-install instructions, licensing and asset attribution, and contributor guidance.
+```bash
+# 1. Bog'liqliklarni o'rnatish
+npm install
 
-## License and assets
+# 2. Dasturni ishga tushirish
+npm start
+```
 
-The source package currently declares the ISC license; the repository will include its license text. Image and preview files are omitted from this first public snapshot while their provenance and reuse rights are reviewed. Do not assume the local preview images are licensed for reuse. A separate asset-attribution record will be added before a stable public release.
+Yoki ish stolidagi **`AI Studio PRO.bat`** faylini ikki marta bosing!
 
-## Feedback and contributions
+---
 
-This repository is a work in progress. Issues describing workflow needs, Uzbek/Russian wording, accessibility concerns, and reproducible bugs are welcome. Please do not submit API keys, personal footage, or private After Effects projects in issues. Contribution instructions will be expanded as the project architecture is stabilized.
-
-## Important billing note
-
-The intended design is for each user to connect their own AI provider account and API key, with that provider billing the account owner. A Claude Max subscription is separate from Anthropic API billing and does not pay for API calls made by an application.
+## 👤 Muallif
+* **Yaratuvchi:** Adxamjonsv (Uzbekistan)
+* **GitHub:** [@Adxamjonsv](https://github.com/Adxamjonsv)

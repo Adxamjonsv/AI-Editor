@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Studio PRO — for Adobe After Effects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div id="app">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand-box">
+        <div class="brand-icon-logo">AI</div>
+        <div class="brand-title-text">
+          <h1>AI Studio <span class="badge-pro">PRO</span></h1>
+          <span>for After Effects</span>
+        </div>
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-item active" data-view="1">
+          <span class="icon">💬</span>
+          <span>Chat</span>
+        </li>
+        <li class="nav-item" data-view="1">
+          <span class="icon">✨</span>
+          <span>Generate</span>
+        </li>
+        <li class="nav-item" data-view="3">
+          <span class="icon">⚡</span>
+          <span>After Effects</span>
+        </li>
+        <li class="nav-item" data-view="2">
+          <span class="icon">📁</span>
+          <span>Referenslar</span>
+        </li>
+        <li class="nav-item" data-view="5">
+          <span class="icon">🎛️</span>
+          <span>Presetlar</span>
+        </li>
+        <li class="nav-item" data-view="4">
+          <span class="icon">🎨</span>
+          <span>Brand Kit</span>
+        </li>
+        <li class="nav-item" data-view="2">
+          <span class="icon">🎞️</span>
+          <span>Media</span>
+        </li>
+        <li class="nav-item" data-view="6">
+          <span class="icon">🎬</span>
+          <span>Render</span>
+        </li>
+        <li class="nav-item" data-view="6">
+          <span class="icon">⏱️</span>
+          <span>Tarix</span>
+        </li>
+        <li class="nav-item" data-view="7">
+          <span class="icon">⚙️</span>
+          <span>Sozlamalar</span>
+        </li>
+        <li class="nav-item" data-view="8">
+          <span class="icon">ℹ️</span>
+          <span>Dastur haqida</span>
+        </li>
+      </ul>
+
+      <div class="sidebar-bottom-credit">
+        Yaratuvchi: <strong>Adxamjonsv</strong>
+      </div>
+    </aside>
+
+    <!-- MAIN VIEW AREA -->
+    <main class="main-content">
+      <!-- TOP NAVIGATION BAR -->
+      <header class="top-header">
+        <div class="page-heading" id="current-screen-title">1. ASOSIY SAHIFA — AI CHAT VA GENERATE</div>
+        <div class="top-bar-right">
+          <div class="status-pill">
+            <span class="dot-green"></span>
+            <span>AE 2026: Ulangan</span>
+          </div>
+          <!-- View Quick Selector Pills to navigate all 8 screens easily -->
+          <div style="display: flex; gap: 4px; background: #12141f; padding: 2px 6px; border-radius: 4px; border: 1px solid #202436;">
+            <button class="screen-tab-btn active" data-target="1" style="background: #5c3bf5; color: #fff; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">1. Chat</button>
+            <button class="screen-tab-btn" data-target="2" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">2. Referenslar</button>
+            <button class="screen-tab-btn" data-target="3" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">3. AE Boshqaruv</button>
+            <button class="screen-tab-btn" data-target="4" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">4. Provayderlar</button>
+            <button class="screen-tab-btn" data-target="5" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">5. Presetlar</button>
+            <button class="screen-tab-btn" data-target="6" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">6. Render</button>
+            <button class="screen-tab-btn" data-target="7" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">7. Sozlamalar</button>
+            <button class="screen-tab-btn" data-target="8" style="background: transparent; color: #8b92a7; border: none; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer;">8. Haqida</button>
+          </div>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="uz">UZ</button>
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- SCREEN 1 -->
+      <section class="screen-panel active" id="panel-1">
+        <div class="view1-container">
+          <div class="chat-column">
+            <div class="user-prompt-card">
+              <p class="prompt-text-p" id="prompt-content">
+                Shu referensga o'xshash 5 soniyalik 3D logo animatsiya yarat. Kamera yaqinlashsin, oltin rang va zarrachalar bo'lsin. Logotipni o'zgartirma, ortiqcha matn qo'shma.
+              </p>
+              <div class="ref-pill-row">
+                <div class="ref-preview-mini" style="background-image: url('../../assets/ref_car.jpg');"></div>
+                <div class="ref-preview-mini" style="background-image: url('../../assets/ref_light.jpg');"></div>
+                <div class="ref-preview-mini" style="background-image: url('../../assets/logo_thumb.jpg');"></div>
+              </div>
+            </div>
+
+            <div class="director-plan-card">
+              <div class="plan-card-top">
+                <div class="plan-title-wrapper">
+                  <span>🪄</span> <strong>AI Director rejasi</strong>
+                </div>
+                <button class="btn-edit-plan">Tahrirlash</button>
+              </div>
+
+              <ul class="plan-step-list-v1">
+                <li class="plan-step-row">
+                  <div class="step-circle active">1</div>
+                  <div class="step-label">Referenslarni tahlil qilish</div>
+                </li>
+                <li class="plan-step-row">
+                  <div class="step-circle active">2</div>
+                  <div class="step-label">Kompozitsiya tuzilmasini yaratish</div>
+                </li>
+                <li class="plan-step-row">
+                  <div class="step-circle active">3</div>
+                  <div class="step-label">3D kamera va animatsiya</div>
+                </li>
+                <li class="plan-step-row">
+                  <div class="step-circle active">4</div>
+                  <div class="step-label">Oltin rang va yorug'lik effektlari</div>
+                </li>
+                <li class="plan-step-row">
+                  <div class="step-circle active">5</div>
+                  <div class="step-label">Final render tayyorlash</div>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-execute-main" id="btn-create-ae">
+              <span>✨</span> Yaratishni boshlash
+            </button>
+
+            <div class="bottom-input-container">
+              <input type="text" placeholder="Promptni yozing..." id="input-prompt-main">
+              <button>🎙️</button>
+              <button>➤</button>
+            </div>
+          </div>
+
+          <div class="center-viewport-column">
+            <div class="comp-tab-header">
+              <div class="comp-tab">Luxury_Ad</div>
+              <div class="comp-tab active">Logo_Animation</div>
+            </div>
+
+            <div class="main-video-preview">
+              <img src="../assets/main_preview.jpg" alt="Luxury Car with Golden 3D Logo">
+            </div>
+
+            <div class="ae-timeline-box">
+              <div class="timeline-toolbar">
+                <div class="timeline-timecode">00:00:02:14</div>
+                <div style="color: var(--text-muted); font-size: 10px;">Logo_Animation (3840x2160, 30fps)</div>
+              </div>
+
+              <div class="timeline-layer-table">
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">1</span>
+                    <span>👁️</span>
+                    <span style="color: #60a5fa; font-weight: 600;">Camera 1</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 80%; background-color: #3b82f6;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">2</span>
+                    <span>👁️</span>
+                    <span style="color: #fbbf24; font-weight: 600;">Light 1</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 80%; background-color: #eab308;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">3</span>
+                    <span>👁️</span>
+                    <span style="color: #c084fc; font-weight: 600;">Logo 3D</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 75%; background-color: #a855f7;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">4</span>
+                    <span>👁️</span>
+                    <span style="color: #c084fc; font-weight: 600;">Car Model</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 80%; background-color: #8b5cf6;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">5</span>
+                    <span>👁️</span>
+                    <span style="color: #22d3ee; font-weight: 600;">Particles</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 85%; background-color: #06b6d4;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">6</span>
+                    <span>👁️</span>
+                    <span style="color: #fb923c; font-weight: 600;">Glow</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 80%; background-color: #f97316;"></div>
+                  </div>
+                </div>
+
+                <div class="timeline-layer-row">
+                  <div class="layer-switches">
+                    <span class="layer-badge-num">7</span>
+                    <span>👁️</span>
+                    <span style="color: #4ade80; font-weight: 600;">Color Grading</span>
+                  </div>
+                  <div class="timeline-track-area">
+                    <div class="track-bar" style="width: 90%; background-color: #10b981;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-info-column">
+            <div class="project-specs-card">
+              <h3>Project info</h3>
+              <div class="comp-header-badge">
+                <div class="ae-icon">Ae</div>
+                <div class="comp-meta-text">
+                  <strong>Logo_Animation</strong>
+                  <span>3840 × 2160 (4K)</span><br>
+                  <span>00:00:05:00 | 30 fps</span>
+                </div>
+              </div>
+
+              <img src="../assets/logo_thumb.jpg" class="spec-thumb-img" alt="Logo preview">
+
+              <div class="data-row"><span>Layerlar:</span> <span>12</span></div>
+              <div class="data-row"><span>Effektlar:</span> <span>8</span></div>
+              <div class="data-row"><span>Kameralar:</span> <span>1</span></div>
+              <div class="data-row"><span>Yorug'lik:</span> <span>3</span></div>
+            </div>
+
+            <button class="btn-open-in-ae">⚡ AE'da ochish</button>
+            <button class="btn-render-preview">👁️ Render Preview</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 2 -->
+      <section class="screen-panel" id="panel-2">
+        <div class="view2-container">
+          <div class="ref-main-content">
+            <div class="ref-filter-bar">
+              <div class="pill-group">
+                <button class="pill-btn active">Barchasi</button>
+                <button class="pill-btn">Video</button>
+                <button class="pill-btn">Rasm</button>
+                <button class="pill-btn">Audio</button>
+                <button class="pill-btn">Loyiha</button>
+                <button class="pill-btn">Brend</button>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn-open-in-ae" style="padding: 5px 12px; font-size: 11px;">+ Referens yuklash</button>
+                <button class="btn-render-preview" style="padding: 5px 12px; font-size: 11px;">📁 Papka yaratish</button>
+              </div>
+            </div>
+
+            <div class="ref-gallery-grid">
+              <div class="ref-card-box">
+                <img src="../assets/ref_car.jpg" class="ref-card-img" alt="Car reference">
+                <div class="ref-card-info"><strong>car_reference.mp4</strong><span>00:12</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/ref_logo.jpg" class="ref-card-img" alt="Logo reference">
+                <div class="ref-card-info"><strong>logo.png</strong><span>4K</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/ref_style.jpg" class="ref-card-img" alt="Style reference">
+                <div class="ref-card-info"><strong>style_reference.jpg</strong><span>Rasm</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/ref_light.jpg" class="ref-card-img" alt="Light reference">
+                <div class="ref-card-info"><strong>light_reference.mp4</strong><span>00:10</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/ref_particles.jpg" class="ref-card-img" alt="Particles reference">
+                <div class="ref-card-info"><strong>particles.mp4</strong><span>00:08</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/ref_text.jpg" class="ref-card-img" alt="Text reference">
+                <div class="ref-card-info"><strong>text_style.jpg</strong><span>Rasm</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-info-column" style="width: 280px;">
+            <div class="project-specs-card">
+              <h3>Referens tahlili</h3>
+              <img src="../assets/ref_analysis_logo.jpg" class="spec-thumb-img" alt="Analysis Logo">
+              <div class="data-row"><span>Asosiy uslub:</span> <span>Kinematik, premium</span></div>
+              <div class="data-row"><span>Ranglar:</span> <span>Oltin, qora, iliq</span></div>
+              <div class="data-row"><span>Kamera:</span> <span>Sekin, dramatik</span></div>
+              <div class="data-row"><span>Ritm:</span> <span>Sekin, dramatik</span></div>
+              <div class="data-row"><span>Effektlar:</span> <span>Partiklyar, glow, reflection</span></div>
+              <div class="data-row"><span>Matn uslubi:</span> <span>Minimal, 3D</span></div>
+              <div class="data-row"><span>Davomiylik:</span> <span>5-10 soniya</span></div>
+            </div>
+            <button class="btn-execute-main" style="padding: 9px; font-size: 11.5px;">Tahlilni qo'llash</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 3 -->
+      <section class="screen-panel" id="panel-3">
+        <div class="view3-container">
+          <div class="ae-column-left">
+            <div class="project-specs-card">
+              <h3>Loyiha ma'lumotlari</h3>
+              <div class="comp-header-badge">
+                <div class="ae-icon">Ae</div>
+                <div class="comp-meta-text">
+                  <strong>Luxury_Ad.aep</strong>
+                  <span>D:\Projects\Luxury_Ad</span><br>
+                  <span>3840 × 2160 (4K) | 30 fps</span>
+                </div>
+              </div>
+              <div style="font-size: 11px; color: var(--accent-green);">● Ulangan</div>
+            </div>
+
+            <div class="project-specs-card">
+              <h3>Kompozitsiyalar</h3>
+              <div class="data-row"><span>Logo_Animation</span> <span>00:00:05:00</span></div>
+              <div class="data-row"><span>Car_Scene</span> <span>00:00:10:00</span></div>
+              <div class="data-row"><span>Text_Reveal</span> <span>00:00:03:00</span></div>
+              <div class="data-row"><span>Main_Comp</span> <span>00:00:15:00</span></div>
+            </div>
+
+            <div class="project-specs-card">
+              <h3>Tez amallar</h3>
+              <div class="quick-action-grid">
+                <button class="btn-quick-ae">Yangi kompozitsiya</button>
+                <button class="btn-quick-ae">Matn qo'shish</button>
+                <button class="btn-quick-ae">Shape layer</button>
+                <button class="btn-quick-ae">Kamera yaratish</button>
+                <button class="btn-quick-ae">Effekt qo'llash</button>
+                <button class="btn-quick-ae">Precomp yaratish</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ae-column-right">
+            <h3 style="font-size: 13px; margin-bottom: 14px;">Layer sozlamalari (Tanlangan layer: Logo 3D)</h3>
+            <h4 style="font-size: 11.5px; color: var(--accent-purple); margin-bottom: 10px;">Transform</h4>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px;">
+              <div class="data-row" style="flex-direction: column;"><span>Position:</span> <strong>960.0, 540.0</strong></div>
+              <div class="data-row" style="flex-direction: column;"><span>Scale:</span> <strong>100%, 100%</strong></div>
+              <div class="data-row" style="flex-direction: column;"><span>Rotation:</span> <strong>0°, 0°, 0°</strong></div>
+              <div class="data-row" style="flex-direction: column;"><span>Opacity:</span> <strong>100%</strong></div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 10px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+              <span>3D Layer:</span>
+              <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+            </div>
+
+            <h4 style="font-size: 11.5px; color: var(--accent-purple); margin-bottom: 10px;">Effektlar</h4>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <div class="data-row" style="align-items: center;">
+                <span>Glow</span>
+                <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+              </div>
+              <div class="data-row" style="align-items: center;">
+                <span>Element 3D</span>
+                <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+              </div>
+              <div class="data-row" style="align-items: center;">
+                <span>Camera Lens Blur</span>
+                <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+              </div>
+              <div class="data-row" style="align-items: center;">
+                <span>Color Correction</span>
+                <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+              </div>
+            </div>
+            <button class="btn-render-preview" style="margin-top: 14px; width: 140px;">+ Effekt qo'shish</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 4 -->
+      <section class="screen-panel" id="panel-4">
+        <div class="view4-container">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="font-size: 15px;">AI Provayderlar</h2>
+            <button class="btn-open-in-ae" style="padding: 6px 14px; font-size: 11px;">+ Yangi provayder</button>
+          </div>
+
+          <div class="provider-cards-row">
+            <div class="provider-item-box">
+              <div class="provider-top-meta">
+                <div>
+                  <strong style="color: #f97316;">☀️ Claude 3.5 Sonnet</strong>
+                  <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Matn, tahlil, mantiq, skript</div>
+                </div>
+                <span class="provider-badge-pill">● Ulangan</span>
+              </div>
+              <div style="height: 5px; background: #202436; border-radius: 3px; overflow: hidden;">
+                <div style="width: 60%; height: 100%; background: #f97316;"></div>
+              </div>
+              <div class="data-row"><span>60%</span> <span>124K / 200K token</span></div>
+              <button class="btn-render-preview" style="font-size: 10.5px; padding: 4px;">Sozlamalar</button>
+            </div>
+
+            <div class="provider-item-box">
+              <div class="provider-top-meta">
+                <div>
+                  <strong style="color: #06b6d4;">✳️ ChatGPT GPT-4o</strong>
+                  <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Matn, tahlil, tasvir</div>
+                </div>
+                <span class="provider-badge-pill">● Ulangan</span>
+              </div>
+              <div style="height: 5px; background: #202436; border-radius: 3px; overflow: hidden;">
+                <div style="width: 35%; height: 100%; background: #06b6d4;"></div>
+              </div>
+              <div class="data-row"><span>35%</span> <span>70K / 200K token</span></div>
+              <button class="btn-render-preview" style="font-size: 10.5px; padding: 4px;">Sozlamalar</button>
+            </div>
+
+            <div class="provider-item-box">
+              <div class="provider-top-meta">
+                <div>
+                  <strong style="color: #a855f7;">✦ Gemini 1.5 Pro</strong>
+                  <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Matn, video tahlil</div>
+                </div>
+                <span class="provider-badge-pill">● Ulangan</span>
+              </div>
+              <div style="height: 5px; background: #202436; border-radius: 3px; overflow: hidden;">
+                <div style="width: 52%; height: 100%; background: #a855f7;"></div>
+              </div>
+              <div class="data-row"><span>52%</span> <span>104K / 200K token</span></div>
+              <button class="btn-render-preview" style="font-size: 10.5px; padding: 4px;">Sozlamalar</button>
+            </div>
+
+            <div class="provider-item-box">
+              <div class="provider-top-meta">
+                <div>
+                  <strong style="color: #10b981;">🟢 Higgsfield</strong>
+                  <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Video generatsiya</div>
+                </div>
+                <span class="provider-badge-pill">● Ulangan</span>
+              </div>
+              <div style="height: 5px; background: #202436; border-radius: 3px; overflow: hidden;">
+                <div style="width: 21%; height: 100%; background: #10b981;"></div>
+              </div>
+              <div class="data-row"><span>21%</span> <span>210 / 1000 min</span></div>
+              <button class="btn-render-preview" style="font-size: 10.5px; padding: 4px;">Sozlamalar</button>
+            </div>
+          </div>
+
+          <div class="project-specs-card" style="margin-top: 10px;">
+            <h3>Provayder tanlash va ustuvorlik</h3>
+            <div style="display: flex; gap: 40px; margin-top: 14px;">
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
+                <div class="data-row"><span>1. Claude (Asosiy)</span> <span style="color: var(--accent-gold);">★ 1</span></div>
+                <div class="data-row"><span>2. ChatGPT (Zaxira)</span> <span>2</span></div>
+                <div class="data-row"><span>3. Gemini</span> <span>3</span></div>
+                <div class="data-row"><span>4. Higgsfield</span> <span>4</span></div>
+              </div>
+
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+                <div class="data-row" style="align-items: center;">
+                  <span>Avtomatik tanlash:</span>
+                  <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+                </div>
+                <div class="data-row"><span>Maksimal xarajat (1 ta vazifa):</span> <span>$5.00</span></div>
+                <div class="data-row"><span>Kunlik limit:</span> <span>$20.00</span></div>
+                <div class="data-row"><span>Oylik limit:</span> <span>$100.00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 5 -->
+      <section class="screen-panel" id="panel-5">
+        <div class="view5-container">
+          <div class="ref-filter-bar">
+            <input type="text" placeholder="Preset qidirish..." style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 5px 12px; border-radius: 4px; color: #fff; font-size: 11px; width: 220px;">
+            <div class="pill-group">
+              <button class="pill-btn active">Barchasi</button>
+              <button class="pill-btn">Logo Reveal</button>
+              <button class="pill-btn">Text</button>
+              <button class="pill-btn">Transition</button>
+              <button class="pill-btn">Camera</button>
+              <button class="pill-btn">Particles</button>
+              <button class="pill-btn">3D</button>
+            </div>
+            <button class="btn-open-in-ae" style="padding: 5px 12px; font-size: 11px;">+ Yangi preset</button>
+          </div>
+
+          <div style="padding: 16px;">
+            <h3 style="font-size: 13px; margin-bottom: 12px;">Motion Presetlar</h3>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+              <div class="ref-card-box">
+                <img src="../assets/preset_logo.jpg" class="ref-card-img" alt="Logo reveal">
+                <div class="ref-card-info"><strong>Cinematic Logo Reveal</strong><span>5 soniya</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/preset_text.jpg" class="ref-card-img" alt="Minimal text">
+                <div class="ref-card-info"><strong>Minimal Text Reveal</strong><span>3 soniya</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/preset_trans.jpg" class="ref-card-img" alt="Transition">
+                <div class="ref-card-info"><strong>Smooth Transition</strong><span>1 soniya</span></div>
+              </div>
+              <div class="ref-card-box">
+                <img src="../assets/preset_cam.jpg" class="ref-card-img" alt="Camera push in">
+                <div class="ref-card-info"><strong>Camera Push In</strong><span>4 soniya</span></div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 13px; margin: 20px 0 12px 0;">Mening presetlarim</h3>
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px;">
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>My Logo Intro</strong></div>
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>Brand Transition</strong></div>
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>Text Style 01</strong></div>
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>Camera Move</strong></div>
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>Light Setup</strong></div>
+              <div class="ref-card-box" style="padding: 10px; text-align: center;"><strong>Particle Pack</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 6 -->
+      <section class="screen-panel" id="panel-6">
+        <div class="view6-container">
+          <div style="width: 280px; display: flex; flex-direction: column; gap: 12px;">
+            <div class="project-specs-card">
+              <h3>Render sozlamalari</h3>
+              <div class="data-row"><span>Format:</span> <strong>H.264 (MP4)</strong></div>
+              <div class="data-row"><span>Ruxsat:</span> <strong>4K (3840×2160)</strong></div>
+              <div class="data-row"><span>Frame rate:</span> <strong>30 fps</strong></div>
+              <div class="data-row"><span>Bitrate:</span> <strong>Yuqori (40 Mbps)</strong></div>
+              <div class="data-row"><span>Chiqish:</span> <span>D:\Renders\</span></div>
+            </div>
+            <button class="btn-execute-main" style="padding: 10px; font-size: 12px;">🚀 Render boshlash</button>
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+            <div class="project-specs-card">
+              <h3>Render navbati</h3>
+              <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+                <div class="data-row" style="background: #191c2b; padding: 6px 10px; border-radius: 4px;">
+                  <span>Logo_Animation (4K, 30fps)</span>
+                  <span style="color: #60a5fa;">86% Rendering...</span>
+                </div>
+                <div class="data-row" style="padding: 6px 10px;">
+                  <span>Reels_Version</span>
+                  <span>Navbatda</span>
+                </div>
+                <div class="data-row" style="padding: 6px 10px;">
+                  <span>YouTube_Version</span>
+                  <span style="color: var(--accent-green);">✔ Tayyor</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-specs-card" style="flex: 1;">
+              <h3>Render logi</h3>
+              <div style="font-family: monospace; font-size: 10.5px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+                12:42:10 Render jarayoni boshlandi...<br>
+                12:42:12 Kompozitsiya tayyorlandi.<br>
+                12:42:15 Frame 120/1500<br>
+                12:42:45 Render tugadi. Fayl saqlandi: D:\Renders\Logo_Animation.mp4
+              </div>
+            </div>
+          </div>
+
+          <div style="width: 320px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="height: 180px; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-subtle);">
+              <img src="../assets/main_preview.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Render preview">
+            </div>
+            <div class="project-specs-card">
+              <h3>Natija</h3>
+              <div class="data-row"><span>Fayl:</span> <span>Logo_Animation.mp4</span></div>
+              <div class="data-row"><span>Hajm:</span> <span>125 MB</span></div>
+              <div class="data-row"><span>Ruxsat:</span> <span>3840 × 2160</span></div>
+              <div class="data-row"><span>Davomiylik:</span> <span>00:00:05:00</span></div>
+              <button class="btn-open-in-ae" style="margin-top: 10px; width: 100%;">📁 Papkani ochish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 7 -->
+      <section class="screen-panel" id="panel-7">
+        <div class="view7-container">
+          <div style="max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px;">
+            <div class="project-specs-card">
+              <h3>Sozlamalar</h3>
+              <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
+                <div class="data-row"><span>Dastur tili:</span> <strong>O'zbek (Lotin)</strong></div>
+                <div class="data-row"><span>Tema:</span> <strong>Qora (Dark)</strong></div>
+                <div class="data-row" style="align-items: center;">
+                  <span>Avtomatik saqlash:</span>
+                  <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+                </div>
+                <div class="data-row" style="align-items: center;">
+                  <span>Zaxira nusxa yaratish:</span>
+                  <label class="switch-toggle"><input type="checkbox" checked><span class="slider-toggle"></span></label>
+                </div>
+                <div class="data-row"><span>Loyiha papkasi:</span> <span>D:\Projects\</span></div>
+                <div class="data-row"><span>Render papkasi:</span> <span>D:\Renders\</span></div>
+                <div class="data-row"><span>Maksimal xarajat (1 ta vazifa):</span> <span>$5.00</span></div>
+                <div class="data-row"><span>Kunlik limit:</span> <span>$20.00</span></div>
+              </div>
+            </div>
+            <button class="btn-execute-main" style="width: 220px;">Sozlamalarni saqlash</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 8 -->
+      <section class="screen-panel" id="panel-8">
+        <div class="view8-container">
+          <div class="about-master-box">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px;">
+              <div class="brand-icon-logo" style="width: 44px; height: 44px; font-size: 18px;">AI</div>
+              <h2 style="font-size: 22px;">AI Studio <span class="badge-pro" style="font-size: 12px;">PRO</span></h2>
+            </div>
+            <p style="color: var(--text-muted); font-size: 12px; margin-bottom: 16px;">for Adobe After Effects · Versiya 1.0.0 · Reliz: 2026.02.14</p>
+            <p style="font-size: 12.5px; line-height: 1.6; color: #cbd5e1; margin-bottom: 24px; text-align: left; background: #0f111a; padding: 16px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+              AI Studio — Adobe After Effects uchun yaratilgan sun'iy intellekt yordamchisi. U sizga referenslar asosida, oddiy tilda buyruq berib, professional montaj, animatsiya va video loyihalarni yaratishga yordam beradi.
+            </p>
+
+            <div style="background: #111420; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #5c3bf5, #2563eb); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">A</div>
+                <div style="text-align: left;">
+                  <div style="font-size: 10px; color: var(--text-muted);">Yaratuvchi:</div>
+                  <strong style="font-size: 14px; color: #fff;">Adxamjonsv</strong>
+                  <div style="font-size: 11px; color: var(--text-muted);">Creator and Developer · Uzbekistan</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn-render-preview" style="font-size: 11px; padding: 5px 12px;">Portfolio</button>
+                <button class="btn-render-preview" style="font-size: 11px; padding: 5px 12px;">Aloqa</button>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; font-size: 11px; color: var(--text-muted);">
+              Created by Adxamjonsv - AI Studio · © 2026. Barcha huquqlar himoyalangan.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "language": "uz",
+  "theme": "dark",
+  "aePath": "C:\\Program Files\\Adobe\\Adobe After Effects 2026\\Support Files\\AfterFX.exe",
+  "projectPath": "C:\\Users\\PC\\OneDrive\\Desktop\\AI montaj\\projects",
+  "renderPath": "C:\\Users\\PC\\OneDrive\\Desktop\\AI montaj\\renders",
+  "backupPath": "C:\\Users\\PC\\OneDrive\\Desktop\\AI montaj\\backups",
+  "autoBackup": true,
+  "maxCostPerTask": 5.0,
+  "dailyBudget": 20.0,
+  "monthlyBudget": 100.0,
+  "activeProvider": "auto",
+  "providers": {
+    "claude": {
+      "name": "Claude 3.5 Sonnet",
+      "type": "anthropic",
+      "connected": false,
+      "apiKey": "",
+      "model": "claude-3-5-sonnet-20241022",
+      "usage": { "requests": 0, "tokens": 0, "cost": 0.0 }
+    },
+    "chatgpt": {
+      "name": "ChatGPT GPT-4o",
+      "type": "openai",
+      "connected": false,
+      "apiKey": "",
+      "model": "gpt-4o",
+      "usage": { "requests": 0, "tokens": 0, "cost": 0.0 }
+    },
+    "gemini": {
+      "name": "Gemini 1.5 Pro",
+      "type": "google",
+      "connected": false,
+      "apiKey": "",
+      "model": "gemini-1.5-pro",
+      "usage": { "requests": 0, "tokens": 0, "cost": 0.0 }
+    },
+    "higgsfield": {
+      "name": "Higgsfield Video & Image",
+      "type": "higgsfield",
+      "connected": false,
+      "apiKey": "",
+      "model": "higgsfield-standard",
+      "usage": { "requests": 0, "tokens": 0, "cost": 0.0 }
+    }
+  },
+  "defaultComp": {
+    "name": "AI_Comp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 5
+  }
+}

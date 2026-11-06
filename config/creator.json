@@ -1,0 +1,23 @@
+{
+  "appName": "AI Studio",
+  "appVersion": "1.0.0",
+  "releaseDate": "2026-10-23",
+  "creator": {
+    "name": "Adxamjonsv",
+    "role": "Creator and Developer",
+    "country": "Uzbekistan",
+    "website": "https://github.com/Adxamjonsv",
+    "email": "adxamjonsv@gmail.com"
+  },
+  "copyright": "© 2026 Adxamjonsv. Barcha huquqlar himoyalangan.",
+  "attribution": {
+    "uz": "Yaratuvchi: Adxamjonsv · AI Studio",
+    "ru": "Создатель: Adxamjonsv · AI Studio",
+    "en": "Created by Adxamjonsv · AI Studio"
+  },
+  "description": {
+    "uz": "AI Studio — Adobe After Effects uchun maxsus yaratilgan sun'iy intellekt yordamchisi. U sizga referenslar asosida, oddiy tilda buyruq berib, professional montaj, animatsiya va video loyihalarni yaratishga yordam beradi.",
+    "ru": "AI Studio — специализированный интеллектуальный помощник для Adobe After Effects. Позволяет на основе референсов и команд на естественном языке создавать профессиональный монтаж, сложную анимацию и видеопроекты.",
+    "en": "AI Studio — a specialized AI motion design assistant for Adobe After Effects. It allows you to create professional motion graphics, animation, and video projects using reference media and natural language commands."
+  }
+}

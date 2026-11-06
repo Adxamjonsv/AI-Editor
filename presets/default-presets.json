@@ -1,0 +1,130 @@
+[
+  {
+    "id": "cinematic-logo-reveal",
+    "name": {
+      "uz": "Cinematic Logo Reveal",
+      "ru": "Кинематографичный логотип",
+      "en": "Cinematic Logo Reveal"
+    },
+    "category": "Logo Reveal",
+    "duration": "00:00:05:00",
+    "description": {
+      "uz": "3D kamera harakati, oltin porlash va zarrachalar effekti bilan ochilish",
+      "ru": "3D движение камеры, золотое свечение и частицы",
+      "en": "3D camera motion with golden glow and subtle particles"
+    },
+    "tags": ["3d", "logo", "gold", "particles", "cinematic"]
+  },
+  {
+    "id": "minimal-text-reveal",
+    "name": {
+      "uz": "Minimal Text Reveal",
+      "ru": "Минималистичный текст",
+      "en": "Minimal Text Reveal"
+    },
+    "category": "Text",
+    "duration": "00:00:03:00",
+    "description": {
+      "uz": "Silliq tipografik paydo bo'lish va niqobli animatsiya",
+      "ru": "Плавное типографическое появление и маска",
+      "en": "Smooth kinetic text appearance with mask animation"
+    },
+    "tags": ["text", "clean", "minimal", "modern"]
+  },
+  {
+    "id": "smooth-transition",
+    "name": {
+      "uz": "Smooth Transition",
+      "ru": "Плавный переход",
+      "en": "Smooth Transition"
+    },
+    "category": "Transition",
+    "duration": "00:00:01:00",
+    "description": {
+      "uz": "Kadrlar orasida optik xiralashuv va tez sur'atli dinamik o'tish",
+      "ru": "Оптическое размытие и динамический зум-переход",
+      "en": "Optical blur and dynamic zoom wipe transition"
+    },
+    "tags": ["transition", "zoom", "blur", "fast"]
+  },
+  {
+    "id": "camera-push-in",
+    "name": {
+      "uz": "Camera Push In",
+      "ru": "Наезд камеры 3D",
+      "en": "Camera Push In"
+    },
+    "category": "Camera",
+    "duration": "00:00:04:00",
+    "description": {
+      "uz": "Obyekt tomon chuqurlik maydoni (Depth of Field) bilan yaqinlashuv",
+      "ru": "Плавное приближение камеры с глубиной резкости",
+      "en": "Cinematic forward camera motion with depth of field"
+    },
+    "tags": ["camera", "3d", "depth", "cinematic"]
+  },
+  {
+    "id": "particle-burst",
+    "name": {
+      "uz": "Particle Burst",
+      "ru": "Вспышка частиц",
+      "en": "Particle Burst"
+    },
+    "category": "Particles",
+    "duration": "00:00:03:00",
+    "description": {
+      "uz": "Markazdan otilib chiquvchi yorqin uchqunlar va zarrachalar",
+      "ru": "Выброс искр и световых частиц из центра",
+      "en": "Radiating sparks and dust particles from focal center"
+    },
+    "tags": ["particles", "burst", "magic", "gold"]
+  },
+  {
+    "id": "lower-thirds",
+    "name": {
+      "uz": "Lower Thirds",
+      "ru": "Нижний титр",
+      "en": "Lower Thirds"
+    },
+    "category": "Text",
+    "duration": "00:00:06:00",
+    "description": {
+      "uz": "Ism va unvon uchun zamonaviy shaffof panel va silliq chiziqlar",
+      "ru": "Современная плашка для титра с линиями и стеклянным стилем",
+      "en": "Modern broadcast glass lower third with animated stroke"
+    },
+    "tags": ["lower third", "broadcast", "title", "interview"]
+  },
+  {
+    "id": "3d-title",
+    "name": {
+      "uz": "3D Title",
+      "ru": "3D Заголовок",
+      "en": "3D Title"
+    },
+    "category": "3D",
+    "duration": "00:00:05:00",
+    "description": {
+      "uz": "Metall yuzali ekstruziya va fazoviy yorug'lik effektlari",
+      "ru": "Объемный металлический текст с направленным светом",
+      "en": "Extruded metallic text with dynamic lighting and reflections"
+    },
+    "tags": ["3d", "metallic", "title", "cinematic"]
+  },
+  {
+    "id": "product-showcase",
+    "name": {
+      "uz": "Product Showcase",
+      "ru": "Презентация продукта",
+      "en": "Product Showcase"
+    },
+    "category": "3D",
+    "duration": "00:00:08:00",
+    "description": {
+      "uz": "Mahsulot atrofida 360 darajali kamera aylanishi va yorug'lik urg'ulari",
+      "ru": "Круговой облет камеры 360 градусов вокруг объекта",
+      "en": "360-degree orbit camera showcasing product with rim light"
+    },
+    "tags": ["product", "orbit", "showcase", "commercial"]
+  }
+]
